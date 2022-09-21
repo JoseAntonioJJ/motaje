@@ -1,0 +1,1 @@
+En fonts se deben poner los archivos de fuentes de texto 

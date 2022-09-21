@@ -1,0 +1,5 @@
+#Evita el acceso a la navegacion por carpetas
+Options -Indexes
+
+#carga por defecto la primera opcion index.php y como segunda index.html
+DirectoryIndex index.php index.html

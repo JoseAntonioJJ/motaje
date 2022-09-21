@@ -1,0 +1,1 @@
+En images se guardan las imágenes. Da igual el formato que tengan..jpg, svg, gif,..etc
