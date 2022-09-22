@@ -2,4 +2,4 @@
 Options -Indexes
 
 #carga por defecto la primera opcion index.php y como segunda index.html
-DirectoryIndex index.php index.html
+DirectoryIndex index.html index.php
