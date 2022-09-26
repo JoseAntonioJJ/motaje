@@ -28,8 +28,8 @@ body {
 header {
     width: 100%;
     height: 650px;
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -354,7 +354,7 @@ footer {
 #google-maps {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/001-pin-black.png);
+    background: url(../../../../assets/icons/001-pin-black.png);
     background-size: cover;
     margin: 0 2px 0 5px;
 }
@@ -362,7 +362,7 @@ footer {
 #google-maps:hover {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/003-google-2.png);
+    background: url(../../../../assets/icons/003-google-2.png);
     background-size: cover;
 
 }
@@ -370,7 +370,7 @@ footer {
 #instagram {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/001-instagram-black.png);
+    background: url(../../../../assets/icons/001-instagram-black.png);
     background-size: cover;
     margin: 0 9px 0 0px;
 }
@@ -378,14 +378,14 @@ footer {
 #instagram:hover {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/001-instagram.png);
+    background: url(../../../../assets/icons/001-instagram.png);
     background-size: cover;
 }
 
 #facebook {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/002-facebook-black.png);
+    background: url(../../../../assets/icons/002-facebook-black.png);
     background-size: cover;
     margin: 0 9px 0 0px;
 }
@@ -393,14 +393,14 @@ footer {
 #facebook:hover {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/002-facebook.png);
+    background: url(../../../../assets/icons/002-facebook.png);
     background-size: cover;
 }
 
 #whatsapp {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/006-whatsapp-1.png);
+    background: url(../../../../assets/icons/006-whatsapp-1.png);
     background-size: cover;
     margin: 0 9px 0 0px;
 }
@@ -408,7 +408,7 @@ footer {
 #whatsapp:hover {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/003-whatsapp.png);
+    background: url(../../../../assets/icons/003-whatsapp.png);
     background-size: cover;
 }
 
@@ -416,14 +416,14 @@ footer {
 #footer-return-inicio {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/flecha-hacia-arriba.png);
+    background: url(../../../../assets/icons/flecha-hacia-arriba.png);
     background-size: cover;
 }
 
 #footer-return-inicio:hover {
     height: 40px;
     width: 40px;
-    background: url(../../../../../assets/icons/punta-de-flecha-hacia-arriba.png);
+    background: url(../../../../assets/icons/punta-de-flecha-hacia-arriba.png);
     background-size: cover;
 } 
 
