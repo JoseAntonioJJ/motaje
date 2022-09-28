@@ -447,11 +447,15 @@ footer {
 /* inicio login */
 .contenedor_form{
     width: 100%;
-    max-width: 1000px;
+    min-height: 100vh;
+    background: url(../../../../assets/images/fondo_papel.jpg); 
+/*    background: url(../../../../assets/images/ilustracion_salon_belleza.jpg); */
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
 
 .form{
@@ -460,13 +464,11 @@ footer {
     display:flex;
     justify-content: end;
     flex-direction: column;
-    border: 1px solid black;
-    margin-top: 50px;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    
-    
-
+    border: 1px solid black;    
+    border-radius: 3px 0px 0px 3px;
+   /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    background-color: white;
+    border: none;
 }
 
 .boton_login {
@@ -498,12 +500,13 @@ footer {
 }
 
 .input_login{
-    width: 90%;
+    width: 270px;
     padding: 10px 5px 3px 5px;
     margin: 0px 5px 3px 5px;
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
     outline: 0px;
+    
     
 }
 
@@ -524,6 +527,7 @@ p, .p_login{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+   
      
        
 }
@@ -572,14 +576,62 @@ p, .p_login{
 
 .lateral{
     width: 280px;
-    /* height: 560px; */
+    height: 575px;
      display:flex;
-     justify-content: end;
+     justify-content: start;
      flex-direction: column;
-     border: 1px solid black;
-     margin-top: 50px;
-     border-radius: 20px 0px 0px 0px;
-     border: 1px solid rgba(0, 0, 0, 0.20);
-     float: left;
-
+     border: 1px solid black;     
+     border-radius: 0px 3px 3px 0px;
+   /*  border: 1px solid rgba(0, 0, 0, 0.20); */
+   /* background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(315, 3%, 72%)) ; */
+    border: none;
+    background: white;
+    
 }
+
+.salir {    
+    text-align: right;
+    margin:-11px -7px 0px 0px;
+  
+}
+.salir a{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;    
+    color: black;
+    cursor: pointer;
+  
+}
+
+.megafono{
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/mujer_con_megafono.jpg); 
+  /*  background-image: url(../../../../assets/images/megafono.jpg); */
+    background-size: cover;
+    margin:10px 0px 0px 65px;
+    border-radius: 50%;    
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.texto_lateral{
+    margin-top: 30px;
+ /*   background: linear-gradient(to right, hsl(0, 0%, 100%),  hsl(315, 3%, 72%)) ; */
+    background: white;
+}
+
+.imagen_lateral{
+    width: 90%;
+    margin: 30px 15px 0px 15px;    
+}
+
+
+
+
+
