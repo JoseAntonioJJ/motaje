@@ -84,7 +84,9 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `telefono` varchar(13) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `id_peluqueria` int(11) NOT NULL
+  `id_peluqueria` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `nombre` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -183,6 +185,8 @@ ALTER TABLE `usuarios`
   ADD CONSTRAINT `fk_peluqueria` FOREIGN KEY (`id_peluqueria`) REFERENCES `peluquerias` (`id_peluqueria`);
 COMMIT;
 
+ALTER TABLE `usuarios`
+ADD CONSTRAINT `UC_tlf_email` UNIQUE (`telefono`,`email`);
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -12,6 +12,7 @@
             "database": "agenda",
             "username": "root",
             "password": ""
-        }
+        },
+        
     ]
 }
