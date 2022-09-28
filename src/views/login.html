@@ -5,18 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Open+Sans:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anek+Latin:wght@300&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b220ced109.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/bootstrapcss.css"> 
+   
+    <link href="resources/css/style.css" rel="StyleSheet"> 
 </head>
 <body>
-    <form id="form_login">
-        <label for="user">user/email</label>
-        <input type="text" id="user" name="user" required placeholder="Usuario o email">
-        <label for="pass">Contraseña</label>
-        <input type="password" name="pass" id="pass" required placeholder="Contraseña">
-    </form>
-    <br>
-    <p>para que funcione usuario = asd y contraseña = 123</p>
-    <h2 id="enviar">Enviar</h2>
-    <h3 id="recibido"></h3>
+    <div class="contenedor_form">
+        <div class="form">
+            <form id="form_login" class="form_login">
+
+                <div class="cabecera_login">
+                    <Section class="textos-cabecera">
+                        <h1> Mariloli Style</h1>
+                        <h2> Peluquería y Estética</h2>
+                    </Section>
+                    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                            style="height: 100%; width: 100%;">
+                            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                                style="stroke: none; fill: #fff;"></path>
+                        </svg></div>
+                </div>
+                <p class="iniciar_sesion">Iniciar Sesión</p>
+                
+                <label for="user" class="label">User/email</label>
+                
+                <input type="text" id="user" name="user" required placeholder="Usuario o email" class="input_login">
+                <br>
+                <label for="pass" class="label">Contraseña</label>
+               
+                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_login">
+            </form>
+            <br>
+            
+            <button class="boton_login"><h2 id="enviar">Iniciar</h2></button>
+            <h3 id="recibido"></h3>
+            <p class="p_login">¿Aun no está registrado?<a href="#" style="text-decoration: noneS;"> Registrese</a></p>
+        </div>
+            <div class="lateral">
+                <h3>Disfrute nuestras ventajas</h3>
+                <p>Solo por estar registrado podrá disfrutar de ofertas especiales, nuestro programa de puntos y muchas mas vetajas que ya irá descubriendo.</p>
+            </div>
+        
+    </div>
+
+  <!--  <p class="p_login">para que funcione usuario = asd y contraseña = 123</p> -->
+
     <script src="resources/js/login.js"></script>
 </body>
 </html>

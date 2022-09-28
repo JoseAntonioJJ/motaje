@@ -31,8 +31,7 @@ enviar.addEventListener('click',()=>{
     data.append('usuario',userString);
     data.append('password',passwordString);
 
-    fetch('/src/services/consulta.php',{
-    method : 'POST',
+    fetch('../../src/services/consulta.php',{   
     body : data
 })
 .then((response)=>{
