@@ -449,18 +449,20 @@ footer {
     width: 100%;
     min-height: 100vh;
     background: url(../../../../assets/images/fondo_papel.jpg); 
-/*    background: url(../../../../assets/images/ilustracion_salon_belleza.jpg); */
+ /*   background: url(../../../../assets/images/ilustracion_salon_belleza.jpg); */
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:-2;    
 }
 
 .form{
     width: 280px;
-   /* height: 560px; */
+    height: 573px;
     display:flex;
     justify-content: end;
     flex-direction: column;
@@ -469,6 +471,18 @@ footer {
    /* border: 1px solid rgba(0, 0, 0, 0.20); */
     background-color: white;
     border: none;
+}
+
+.sombreado1,.sombreado2{
+    width: 280px;
+    height: 573px;
+     /* background: linear-gradient(90deg, rgba(196,6,39,0.8463760504201681) 3%, rgba(121,9,96,1) 38%, rgba(255,0,99,1) 82%); */ 
+    background: linear-gradient(90deg, rgba(207,19,165,1) 26%, rgba(121,9,96,1) 49%, rgba(207,19,165,1) 75%);  
+    position: absolute;
+    z-index:-1;
+    filter: blur(30px);
+
+
 }
 
 .boton_login {
@@ -576,9 +590,9 @@ p, .p_login{
 
 .lateral{
     width: 280px;
-    height: 575px;
+    height: 573px;
      display:flex;
-     justify-content: start;
+     justify-content: start;   
      flex-direction: column;
      border: 1px solid black;     
      border-radius: 0px 3px 3px 0px;
@@ -592,6 +606,7 @@ p, .p_login{
 .salir {    
     text-align: right;
     margin:-11px -7px 0px 0px;
+    
   
 }
 .salir a{
@@ -606,9 +621,10 @@ p, .p_login{
     width: 150px;
     height: 150px;    
     background-image: url(../../../../assets/images/mujer_con_megafono.jpg); 
-  /*  background-image: url(../../../../assets/images/megafono.jpg); */
+   /* background-image: url(../../../../assets/images/megafono.jpg); */
     background-size: cover;
-    margin:10px 0px 0px 65px;
+    margin:80px 0px 0px 65px;
+   /* margin:10px 0px 0px 65px; */
     border-radius: 50%;    
 }
 
@@ -630,7 +646,209 @@ h3{
     width: 90%;
     margin: 30px 15px 0px 15px;    
 }
+/* fin login */
 
+/* Inicio registro */
+.contenedor_registro{  /* identico, unir y borrar */
+    width: 100%;
+    min-height: 100vh;
+    background: url(../../../../assets/images/fondo_papel.jpg); 
+ /*   background: url(../../../../assets/images/ilustracion_salon_belleza.jpg); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:-2;    
+}
+
+.registro{  /* identico,  unir y borrar */
+    width: 280px;
+    height: 573px;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid black;    
+    border-radius: 3px 0px 0px 3px;
+   /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    background-color: white;
+    border: none;
+}
+
+.sombreado1,.sombreado2{ /* identico, para borrar */
+    width: 280px;
+    height: 573px;
+     /* background: linear-gradient(90deg, rgba(196,6,39,0.8463760504201681) 3%, rgba(121,9,96,1) 38%, rgba(255,0,99,1) 82%); */ 
+    background: linear-gradient(90deg, rgba(207,19,165,1) 26%, rgba(121,9,96,1) 49%, rgba(207,19,165,1) 75%);  
+    position: absolute;
+    z-index:-1;
+    filter: blur(30px);
+
+
+}
+
+.boton_registro { /* identico, unir y  borrar */
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6px;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.505), hsla(317, 45%, 52%, 0.708));
+    color: white;
+    border: 1px solid #642a73;
+    font-weight: 400;
+    margin: 5px 5px;
+    width: 270px;
+    text-align: center;
+    font-size: 15px;    
+    padding: 2px 20px;
+    border-radius: 7px;    
+    display: block;
+}
+
+.boton_registro:hover { /* identico, unir y  borrar */
+    background: #edebeb9c;
+    color: #642a73;
+    border: 1px solid #642a73;
+    cursor: pointer;
+}
+
+.label{ /* identico, para borrar */
+    display: block;
+    margin: 20px 10px 3px 10px
+}
+
+.input_registro{ /* identico, unir y  borrar */
+    width: 270px;
+    padding: 10px 5px 3px 5px;
+    margin: 0px 5px 3px 5px;
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    outline: 0px;
+    
+    
+}
+
+.input_registro:hover{  /* identico, unir y  borrar */
+    cursor: pointer;
+}
+
+p, .p_registro{
+    margin: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+.cabecera_registro{
+    width: 100%;
+    text-align: center;       
+}
+
+.textos-registro {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+.textos-cabecera-registro h1 { 
+    font-family: 'Lato', sans-serif; 
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    margin-top: 20px;
+   
+   
+}
+
+.textos-cabecera-registro h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    position:absolute;
+    z-index: 1;
+    margin:0px 5px 0px 5px;
+    
+}
+
+.lateral_registro{
+    width: 280px;
+    height: 573px;
+     display:flex;
+     justify-content: start;   
+     flex-direction: column;
+     border: 1px solid black;     
+     border-radius: 0px 3px 3px 0px;
+   /*  border: 1px solid rgba(0, 0, 0, 0.20); */
+   /* background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(315, 3%, 72%)) ; */
+    border: none;
+    background: white;
+    
+}
+
+.salir_registro {    
+    text-align: right;
+    margin:-11px -7px 0px 0px;
+    
+  
+}
+.salir_registro a{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;    
+    color: black;
+    cursor: pointer;
+  
+}
+
+.texto_corporativo h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.texto_corporativo h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+    text-align: center;
+}
+
+.megafono{
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/mujer_con_megafono.jpg); 
+   /* background-image: url(../../../../assets/images/megafono.jpg); */
+    background-size: cover;
+    margin:80px 0px 0px 65px;
+   /* margin:10px 0px 0px 65px; */
+    border-radius: 50%;    
+}
+
+h3{  /* identico, para borrar */
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.texto_lateral_registro{
+    margin-top: 30px;
+ /*   background: linear-gradient(to right, hsl(0, 0%, 100%),  hsl(315, 3%, 72%)) ; */
+    background: white;
+}
+
+.imagen_lateral_registro{
+    width: 90%;
+    margin: 30px 15px 0px 15px;    
+}
 
 
 

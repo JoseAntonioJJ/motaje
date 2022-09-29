@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>REGISTRO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,46 +19,55 @@
     <link href="./resources/css/style.css" rel="StyleSheet"> <!-- /resources/css/style.css -->
 </head>
 <body>
-    <div class="contenedor_form">
-        <div class="form">
-            <form id="form_login" class="form_login">
+    <div class="contenedor_registro">
+        <div class="registro">
+            <form id="form_registro" class="form_registro">
                 <div class="sombreado1"></div>   
-                <div class="cabecera_login">                  
-                    <Section class="textos-cabecera">
-                        <h1> Mariloli Style</h1>
-                        <h2> Peluquería y Estética</h2>
+                <div class="cabecera_registro">                  
+                    <Section class="textos-cabecera-registro">
+                        <h1> Regístrese</h1>
+                        <h2> Solo le tomará unos minustos</h2>
                     </Section>
-                    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                            style="height: 100%; width: 100%;">
-                            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                                style="stroke: none; fill: #fff;"></path>
-                        </svg></div>
+                    <div class="contenedor_imagen_registro">
+                        <img src="../../assets/images/ilustracion_mujeres_rulos.jpg " class="imagen_lateral" alt="Ilustración mujeres con rulos en secador"> 
+                    </div>
+                    
                 </div>
-                <p class="iniciar_sesion">Iniciar Sesión</p>
+                
                 
                 <label for="user" class="label">User/email</label>
                 
-                <input type="text" id="user" name="user" required placeholder="Usuario o email" class="input_login">
+                <input type="text" id="user" name="user" required placeholder="Usuario o email" class="input_registro">
                 <br>
                 <label for="pass" class="label">Contraseña</label>
                
-                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_login">
+                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_registro">
+                <br>
+                <label for="pass" class="label">Repita su Contraseña</label>
+               
+                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_registro">
             </form>
             <br>
             
-            <button class="boton_login"><h2 id="enviar">Iniciar</h2></button>
+            <button class="boton_registro"><h2 id="enviar">Enviar</h2></button>
             <h3 id="recibido"></h3>
-            <p class="p_login">¿Aun no está registrado?<a href="registro.html" style="text-decoration: noneS;"> Registrese</a></p>
+           
         </div>
             <div class="lateral">
                 <div class="sombreado2"></div> 
                 <div class="salir">
                     <a href="index.html"><i class="fa-solid fa-circle-xmark"></i></a>
                 </div>
-                <div class="megafono"></div> 
+                <p>Desde</p>
+                <Section class="texto_corporativo">
+                    <h1> Mariloli Style</h1>
+                    <h2> Peluquería y Estética</h2>
+                </Section>
                 <div class="texto_lateral">
-                    <h3>¡Disfrute nuestras ventajas!</h3>
-                    <p>Solo por estar registrado podrá disfrutar de ofertas especiales, nuestro programa de puntos y muchas mas vetajas que ya irá descubriendo.</p>
+                    <!--<h3>¡Disfrute nuestras ventajas!</h3>-->
+                    <p>Queremos agradecerle su confianza y le damos la bienvenida a la que desde hoy es su casa. 
+                        Disfrute de un trato cercano y los mejores tratamientos.</p>
+                    <div class="megafono"></div>
                 </div> 
               <!--  <div class="contenedor_imagen_lateral">
                     <img src="../../assets/images/ilustracion_mujeres_rulos.jpg " class="imagen_lateral" alt="Ilustración mujeres con rulos en secador"> 
@@ -73,8 +82,8 @@
         
     </div>
 
-  <!--  <p class="p_login">para que funcione usuario = asd y contraseña = 123</p> -->
+  <!--  <p class="p_registro">para que funcione usuario = asd y contraseña = 123</p> -->
 
-    <script src="resources/js/login.js"></script>
+    <script src="resources/js/registro.js"></script>
 </body>
 </html>
