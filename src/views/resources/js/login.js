@@ -5,6 +5,8 @@ let passwordString = '';
 // guardamos los elementos del DOM en variables
 const usuario = document.getElementById('user');
 const pass = document.getElementById('pass');
+usuario.value='';
+pass.value='';
 const enviar = document.getElementById('enviar');
 const recibido = document.getElementById('recibido')
 
