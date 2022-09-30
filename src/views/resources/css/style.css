@@ -649,11 +649,10 @@ h3{
 /* fin login */
 
 /* Inicio registro */
-.contenedor_registro{  /* identico, unir y borrar */
+.contenedor_registro{ 
     width: 100%;
     min-height: 100vh;
     background: url(../../../../assets/images/fondo_papel.jpg); 
- /*   background: url(../../../../assets/images/ilustracion_salon_belleza.jpg); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -664,7 +663,7 @@ h3{
     z-index:-2;    
 }
 
-.registro{  /* identico,  unir y borrar */
+.registro{  
     width: 280px;
     height: 573px;
     display:flex;
@@ -672,24 +671,20 @@ h3{
     flex-direction: column;
     border: 1px solid black;    
     border-radius: 3px 0px 0px 3px;
-   /* border: 1px solid rgba(0, 0, 0, 0.20); */
     background-color: white;
     border: none;
 }
 
-.sombreado1,.sombreado2{ /* identico, para borrar */
+.sombreado1,.sombreado2{
     width: 280px;
     height: 573px;
-     /* background: linear-gradient(90deg, rgba(196,6,39,0.8463760504201681) 3%, rgba(121,9,96,1) 38%, rgba(255,0,99,1) 82%); */ 
     background: linear-gradient(90deg, rgba(207,19,165,1) 26%, rgba(121,9,96,1) 49%, rgba(207,19,165,1) 75%);  
     position: absolute;
     z-index:-1;
     filter: blur(30px);
-
-
 }
 
-.boton_registro { /* identico, unir y  borrar */
+.boton_registro { 
     font-family: 'Lato', sans-serif;
     letter-spacing: 6px;
     background: linear-gradient(to right, hsla(340, 95%, 50%, 0.505), hsla(317, 45%, 52%, 0.708));
@@ -705,30 +700,28 @@ h3{
     display: block;
 }
 
-.boton_registro:hover { /* identico, unir y  borrar */
+.boton_registro:hover {
     background: #edebeb9c;
     color: #642a73;
     border: 1px solid #642a73;
     cursor: pointer;
 }
 
-.label{ /* identico, para borrar */
+.label{
     display: block;
     margin: 20px 10px 3px 10px
 }
 
-.input_registro{ /* identico, unir y  borrar */
+.input_registro{
     width: 270px;
     padding: 10px 5px 3px 5px;
     margin: 0px 5px 3px 5px;
     border: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-    outline: 0px;
-    
-    
+    outline: 0px;        
 }
 
-.input_registro:hover{  /* identico, unir y  borrar */
+.input_registro:hover{  
     cursor: pointer;
 }
 
@@ -750,8 +743,7 @@ p, .p_registro{
     justify-content: start;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 20px;
-   
+    margin-bottom: 20px;   
 }
 
 .textos-cabecera-registro h1 { 
@@ -759,10 +751,9 @@ p, .p_registro{
     font-size: 35px;
     font-weight: 600;
     color: black;
-    margin-top: 20px;
-   
-   
+    margin-top: 20px;   
 }
+
 
 .textos-cabecera-registro h2 {
     font-family: 'Lato', sans-serif;
@@ -778,33 +769,39 @@ p, .p_registro{
 .lateral_registro{
     width: 280px;
     height: 573px;
-     display:flex;
-     justify-content: start;   
-     flex-direction: column;
-     border: 1px solid black;     
-     border-radius: 0px 3px 3px 0px;
-   /*  border: 1px solid rgba(0, 0, 0, 0.20); */
-   /* background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(315, 3%, 72%)) ; */
+    display:flex;
+    justify-content: start;   
+    flex-direction: column;
+    border: 1px solid black;     
+    border-radius: 0px 3px 3px 0px;
     border: none;
     background: white;
-    
+    align-items: center;    
 }
 
 .salir_registro {    
-    text-align: right;
-    margin:-11px -7px 0px 0px;
-    
-  
+    text-align: left;
+    margin:-11px -275px 0px 0px;  
 }
+
 .salir_registro a{
     font-family: 'Lato', sans-serif;
     font-size: 25px;    
     color: black;
-    cursor: pointer;
-  
+    cursor: pointer;  
 }
 
-.texto_corporativo h1 {
+.texto_corporativo1{  /* */
+    margin-top: 60px;
+    display: block;
+}
+
+.texto_corporativo2{  /* */
+    margin-top: 90px;
+    display: none;
+}
+
+.texto_corporativo1 h1{
     font-family: 'Abril Fatface', cursive;
     font-size: 35px;
     font-weight: 400;
@@ -812,7 +809,7 @@ p, .p_registro{
     text-align: center;
 }
 
-.texto_corporativo h2 {
+.texto_corporativo1 h2{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -820,18 +817,36 @@ p, .p_registro{
     text-align: center;
 }
 
-.megafono{
-    width: 150px;
-    height: 150px;    
-    background-image: url(../../../../assets/images/mujer_con_megafono.jpg); 
-   /* background-image: url(../../../../assets/images/megafono.jpg); */
-    background-size: cover;
-    margin:80px 0px 0px 65px;
-   /* margin:10px 0px 0px 65px; */
-    border-radius: 50%;    
+.texto_corporativo2 h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    line-height:25px;
 }
 
-h3{  /* identico, para borrar */
+.gracias {  /* */
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/gracias.jpg);    
+    background-size: cover;
+    margin:25px 65px 0px 65px;   
+    border-radius: 50%;
+    display: block;         
+}
+
+.bienvenido {  /* */
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/bienvenido_floral.jpg);    
+    background-size: cover;
+    margin:15px 65px 0px 65px;   
+    border-radius: 50%;
+    display: none;     
+}
+
+h3{  
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -839,16 +854,70 @@ h3{  /* identico, para borrar */
     text-align: center;
 }
 
-.texto_lateral_registro{
-    margin-top: 30px;
- /*   background: linear-gradient(to right, hsl(0, 0%, 100%),  hsl(315, 3%, 72%)) ; */
+.texto_lateral_registro1{ /* */
+    margin-top: 15px; 
     background: white;
+    display: block; 
+}
+
+.texto_lateral_registro2{ /* */
+    margin-top: 15px; 
+    background: white;
+    display: none;
 }
 
 .imagen_lateral_registro{
     width: 90%;
-    margin: 30px 15px 0px 15px;    
+    margin: 30px 15px 0px 15px;     
 }
+
+/* Fin registro */
+
+
+/* Inicio comprobaciones */
+
+
+#mensaje_error_email{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_email_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+
+}
+
+#mensaje_error_pass{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_3{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
 
 
 
