@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/b220ced109.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/css/bootstrapcss.css"> 
    
-    <link href="./resources/css/style.css" rel="StyleSheet"> <!-- /resources/css/style.css -->
+    <link href="resources/css/style.css" rel="StyleSheet"> <!-- /resources/css/style.css -->
 </head>
 <body>
     <div class="contenedor_form">
@@ -38,15 +38,19 @@
                 
                 <label for="user" class="label">User/email</label>
                 
-                <input type="text" id="user" name="user" required placeholder="Usuario o email" class="input_login">
+                <input type="text" id="user_login" name="user" required placeholder="Usuario o email" class="input_login normal">
+                <span id="mensaje_error_user_login">Este campo no puede estar vacio</span>
+                <span id="mensaje_error_user_login_2">El usuario no existe</span>
                 <br>
                 <label for="pass" class="label">Contraseña</label>
                
-                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_login">
+                <input type="password" id="pass_login" name="pass" required placeholder="Contraseña" class="input_login normal">
+                <span id="mensaje_error_pass_login">Este campo no puede estar vacio</span>
+                <span id="mensaje_error_pass_login_2">La contraseña no es correcta</span>
             </form>
             <br>
             
-            <button class="boton_login"><h2 id="enviar">Iniciar</h2></button>
+            <button class="boton_login"><h2 id="enviar_login">Iniciar</h2></button>
             <h3 id="recibido"></h3>
             <p class="p_login">¿Aun no está registrado?<a href="registro.html" style="text-decoration: noneS;"> Registrese</a></p>
         </div>
@@ -59,15 +63,7 @@
                 <div class="texto_lateral">
                     <h3>¡Disfrute nuestras ventajas!</h3>
                     <p>Solo por estar registrado podrá disfrutar de ofertas especiales, nuestro programa de puntos y muchas mas vetajas que ya irá descubriendo.</p>
-                </div> 
-              <!--  <div class="contenedor_imagen_lateral">
-                    <img src="../../assets/images/ilustracion_mujeres_rulos.jpg " class="imagen_lateral" alt="Ilustración mujeres con rulos en secador"> 
-                </div> -->
-
-            <!--    <div class="contenedor_imagen_lateral">
-                    <img src="../../assets/images/ilustracion_salon_belleza.jpg " class="imagen_lateral" alt="Ilustración mujeres con rulos en secador"> 
-                </div>  -->
-
+                </div>           
 
             </div>
         
@@ -75,6 +71,63 @@
 
   <!--  <p class="p_login">para que funcione usuario = asd y contraseña = 123</p> -->
 
-    <script src="resources/js/login.js"></script>
+<!--    <script src="resources/js/login.js"></script> -->
+    <script>
+        function logarse(){
+            campo_user_login=document.getElementById("user_login");
+            valor_user_login=campo_user_login.value;
+            if(valor_user_login == ""){           
+                document.getElementById("mensaje_error_user_login").style.display="block";
+                verificado_user_login=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_user_login").style.display="none";
+                verificado_user_login=true;
+
+                if(valor_user_login == ""){           
+                    document.getElementById("mensaje_error_user_login_2").style.display="block";
+                    verificado_user_login=false; /*hacer consulta a base de datos para ver si el usuario existe*/
+                }
+                else{            
+                    document.getElementById("mensaje_error_user_login_2").style.display="none";
+                    verificado_user_login=true;
+                }   
+            }        
+
+                 
+            //password//
+            campo_pass_login=document.getElementById("pass_login");
+            valor_pass_login=campo_pass_login.value;        
+            if(valor_pass_login == ""){           
+                document.getElementById("mensaje_error_pass_login").style.display="block";
+                verificado_pass_login=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_pass_login").style.display="none";
+                verificado_pass_login=true;
+                
+                if(valor_pass_login == ""){           
+                    document.getElementById("mensaje_error_pass_login_2").style.display="block";
+                    verificado_pass_login=false; /*hacer consulta a base de datos para ver si el usuario existe*/
+                }
+                else{            
+                    document.getElementById("mensaje_error_pass_login_2").style.display="none";
+                    verificado_pass_login=true;
+                }
+            
+            }
+
+            //verificar//
+
+            if(verificado_user_login && verificado_pass_login){
+                document.getElementById("form_login").submit();        
+            }
+    }
+    document.getElementById("enviar_login").addEventListener("click",logarse);
+    document.getElementById("user_login").focus();
+    
+
+   
+    </script>
 </body>
 </html>

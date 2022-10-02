@@ -2,11 +2,7 @@ _peluqueria = document.getElementById("selector_peluqueria");
 _estetica = document.getElementById("selector_estetica");
 _manicura =  document.getElementById("selector_manicura");
 _masaje = document.getElementById("selector_masaje");
-/*
- function seleccion_peluqueria(){
-    document.getElementById("selector_peluqueria").style = 'background: linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)),  url("../../assets/images/card\ peluqueria.jpg");'      
- }
-*/  
+
  function seleccion_peluqueria(){
    _peluqueria.className = "peluqueria_select";
    _estetica.className = "estetica";
@@ -36,11 +32,33 @@ _masaje = document.getElementById("selector_masaje");
  }
 
  $(document).ready(function (){ 
+
+  $(document).on("click", ".selector",function(){
+   
+    $(".salir").hide();
+  }); 
+  
+  $(document).on("click", "#volver_1",function(){
+   
+    $(".calendar").hide();
+    $(".selector_categoria").toggle(1000);
+    $(".salir").delay(500).show("fold");
+   
+  });
+  
+  $(document).on("click", "#volver_2",function(){
+   
+    $(".calendar_hours").hide();
+    $(".calendar").toggle(1000);
+   
+  });  
+
  $(document).on("click", ".selector",function(){
    
-   $(".selector").hide(1000);
+   $(".selector_categoria").hide(1000);
    /*$(this).show(1000);*/
    $("#calendar").toggle(1000);
+   
  });
 
  $(document).on("click", ".days",function(){
@@ -48,6 +66,7 @@ _masaje = document.getElementById("selector_masaje");
    $("#calendar").hide(1000);
    /*$(this).show(1000);*/
    $("#calendar_hours").toggle(1000);
+  
  });
 
 

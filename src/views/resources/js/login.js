@@ -3,9 +3,9 @@ let userString = '';
 let passwordString = '';
 
 // guardamos los elementos del DOM en variables
-const usuario = document.getElementById('user');
-const pass = document.getElementById('pass');
-const enviar = document.getElementById('enviar');
+const usuario = document.getElementById('user_login');
+const pass = document.getElementById('pass_login');
+const enviar = document.getElementById('enviar_login');
 const recibido = document.getElementById('recibido')
 
 //añadimos eventos que cada vez que el cliente escribe (tipea) lo captura

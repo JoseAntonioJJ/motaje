@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/b220ced109.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/css/bootstrapcss.css"> 
    
-    <link href="./resources/css/style.css" rel="StyleSheet"> <!-- /resources/css/style.css -->
+    <link href="resources/css/style.css" rel="StyleSheet"> <!-- /resources/css/style.css -->
 </head>
 <body>
     <div class="contenedor_registro">
@@ -34,23 +34,29 @@
                     
                 </div>
                 
+                <div class="textos-registro">
+                    <label for="user" class="label">User</label>
                 
-                <label for="user" class="label">Email</label>
+                    <input type="text" id="user" name="user" required placeholder="Nombre" class="input_registro normal">
+                    <span id="mensaje_error_user">Este campo no puede estar vacio</span>
                 
-                <input type="text" id="user" name="user" required placeholder="Email" class="input_registro normal">
-                <span id="mensaje_error_email">Este campo no puede estar vacio</span>
-                <span id="mensaje_error_email_2">Debe introducir un formato email válido</span>
-                <br>
-                <label for="pass" class="label">Contraseña</label>
+                    <label for="email" class="label">Email</label>
+                
+                    <input type="text" id="email" name="email" required placeholder="Email" class="input_registro normal">
+                    <span id="mensaje_error_email">Este campo no puede estar vacio</span>
+                    <span id="mensaje_error_email_2">Debe introducir un formato email válido</span>
+                    <br>
+                    <label for="pass" class="label">Contraseña</label>
                
-                <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_registro normal">
-                <span id="mensaje_error_pass">Este campo no puede estar vacio</span>
-                <br>
-                <label for="pass" class="label">Repita su Contraseña</label>
+                    <input type="password" name="pass" id="pass" required placeholder="Contraseña" class="input_registro normal">
+                    <span id="mensaje_error_pass">Este campo no puede estar vacio</span>
+                    <br>
+                    <label for="pass" class="label">Repita su Contraseña</label>
                     
-                <input type="password" name="pass_2" id="pass_2" required placeholder="Contraseña" class="input_registro normal">
-                <span id="mensaje_error_pass_2">Este campo no puede estar vacio</span>
-                <span id="mensaje_error_pass_3">No coincide con su contraseña aportada</span>
+                    <input type="password" name="pass_2" id="pass_2" required placeholder="Contraseña" class="input_registro normal">
+                    <span id="mensaje_error_pass_2">Este campo no puede estar vacio</span>
+                    <span id="mensaje_error_pass_3">No coincide con su contraseña aportada</span>
+                </div>    
             </form>
             <br>
             
@@ -65,20 +71,20 @@
                         <a href="index.html"><i class="fa-solid fa-circle-xmark"></i></a>
                     </div>
                 
-              <!---->      <Section class="texto_corporativo1">
+                   <Section id="texto_corporativo1" class="texto_corporativo1">
                         <p>Desde</p>
                         <h1> Mariloli Style</h1>
                         <h2> Peluquería y Estética</h2>
                     </Section>
-            <!---->          <Section class="texto_corporativo2">                    
+                     <Section id="texto_corporativo2" class="texto_corporativo2">                    
                         <h1> ¡Ya está con nosotros!</h1>
                     </Section>
 
-            <!---->         <div class="texto_lateral_registro1">            
+                    <div id="texto_lateral_registro1" class="texto_lateral_registro1">            
                         <p>Queremos agradecerle su confianza y darle la bienvenida a la que desde hoy es su casa. 
                         Disfrute de un trato cercano y los mejores tratamientos.</p>
                     </div>  
-            <!---->        <div class="texto_lateral_registro2">            
+                   <div id="texto_lateral_registro2" class="texto_lateral_registro2">            
                         <p>Se ha llevado a cabo su registro con exito. 
                             En breve recibirá un correo electrónico para confirmar su cuenta. 
                         </p>
@@ -86,8 +92,8 @@
                         <p>Solo le queda escoger su cita cómodamente y venir a conocernos. 
                         </p>           
                     </div>
-            <!---->        <div class="gracias"></div>   
-                    <div class="bienvenido"></div>             
+                   <div id="gracias" class="gracias"></div>   
+                    <div id="bienvenido" class="bienvenido"></div>             
                 </div>
             </div>   
             
@@ -99,76 +105,91 @@
     <script>
 
         function enviar(){
-        //email//
-        campo_email=document.getElementById("user");
-        valor_email=campo_email.value;
-        if(valor_email == ""){           
-            document.getElementById("mensaje_error_email").style.display="block";
-            verificado_email=false;
-        }
-        else{            
-            document.getElementById("mensaje_error_email").style.display="none";
-            verificado_email=true;
-        }
+            campo_user=document.getElementById("user");
+            valor_user=campo_user.value;
+            if(valor_user == ""){           
+                document.getElementById("mensaje_error_user").style.display="block";
+                verificado_user=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_user").style.display="none";
+                verificado_user=true;
+            }   
+
+
+            //email//
+            campo_email=document.getElementById("email");
+            valor_email=campo_email.value;
+            if(valor_email == ""){           
+                document.getElementById("mensaje_error_email").style.display="block";
+                verificado_email=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_email").style.display="none";
+                verificado_email=true;
+       
+                if(valor_email.indexOf("@") == -1){           
+                    document.getElementById("mensaje_error_email_2").style.display="block";
+                    verificado_email=false;
+                }
+                else{            
+                    document.getElementById("mensaje_error_email_2").style.display="none";
+                    verificado_email=true;
+                }
+            }
+
         
+            //password//
+            campo_pass=document.getElementById("pass");
+            valor_pass=campo_pass.value;        
+            if(valor_pass == ""){           
+                document.getElementById("mensaje_error_pass").style.display="block";
+                verificado_pass=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_pass").style.display="none";
+                verificado_pass=true;
+            }
 
-        if(valor_email.indexOf("@") == -1){           
-            document.getElementById("mensaje_error_email_2").style.display="block";
-            verificado_email=false;
-        }
-        else{            
-            document.getElementById("mensaje_error_email_2").style.display="none";
-            verificado_email=true;
-        }
+
+            //repetir password//
+            campo_pass_2=document.getElementById("pass_2");
+            valor_pass_2=campo_pass_2.value;
+            if(valor_pass_2 == ""){           
+                document.getElementById("mensaje_error_pass_2").style.display="block";
+                verificado_pass_2=false;
+            }
+            else{            
+                document.getElementById("mensaje_error_pass_2").style.display="none";
+                verificado_pass_2=true;
         
-        //password//
-        campo_pass=document.getElementById("pass");
-        valor_pass=campo_pass.value;
-        campo_pass_2=document.getElementById("pass_2");
-        valor_pass_2=campo_pass_2.value;
-        if(valor_pass == ""){           
-            document.getElementById("mensaje_error_pass").style.display="block";
-            verificado_pass=false;
-        }
-        else{            
-            document.getElementById("mensaje_error_pass").style.display="none";
-            verificado_pass=true;
-        }
+                if(valor_pass != valor_pass_2){           
+                    document.getElementById("mensaje_error_pass_3").style.display="block";
+                    verificado_pass_2=false;
+                }
+                else{            
+                    document.getElementById("mensaje_error_pass_3").style.display="none";
+                    verificado_pass_2=true;
+                }
+            }
 
 
-        if(valor_pass_2 == ""){           
-            document.getElementById("mensaje_error_pass_2").style.display="block";
-            verificado_pass_2=false;
-        }
-        else{            
-            document.getElementById("mensaje_error_pass_2").style.display="none";
-            verificado_pass_2=true;
-        }
+            //verificar//
 
-
-        if(valor_pass != valor_pass_2){           
-            document.getElementById("mensaje_error_pass_3").style.display="block";
-            verificado_pass_2=false;
-        }
-        else{            
-            document.getElementById("mensaje_error_pass_3").style.display="none";
-            verificado_pass_2=true;
-        }
-
-        //verificar//
-
-        if(verificado_email && verificado_pass && verificado_pass_2){
-            document.getElementsByClassName("texto_corporativo1").style.display="none";
-            document.getElementsByClassName("texto_corporativo2").style.display="block";
-            document.getElementsByClassName("texto_lateral_registro1").style.display="none";
-            document.getElementsByClassName("texto_lateral_registro2").style.display="block";
-            document.getElementsByClassName("gracias").style.display="none";
-            document.getElementsByClassName("bienvenido").style.display="block";
-            document.getElementById("formulario").submit();
+            if(verificado_user && verificado_email && verificado_pass && verificado_pass_2){
+                document.getElementById("texto_corporativo1").style.display="none";
+                document.getElementById("texto_corporativo2").style.display="block";
+                document.getElementById("texto_lateral_registro1").style.display="none";
+                document.getElementById("texto_lateral_registro2").style.display="block";
+                document.getElementById("gracias").style.display="none";
+                document.getElementById("bienvenido").style.display="block";
+             /*   document.getElementById("form_registro").submit(); */
         
-        }
+            }
     }
     document.getElementById("enviar").addEventListener("click",enviar);
+    document.getElementById("user").focus();
+    
 
     </script>
 </body>

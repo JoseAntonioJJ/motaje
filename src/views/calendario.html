@@ -14,16 +14,20 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script src="https://kit.fontawesome.com/b220ced109.js" crossorigin="anonymous"></script>
+  
   </head>
   <body>
     <div class="container">
-      
-        <div class="selector_categoria">
-      
+        
+        <div class="selector_categoria" id="selector_categoria">
+          
+          <div class="salir">
+            <a href="index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+          </div> 
+          
           <div id="selector_peluqueria" class="peluqueria selector" onclick="mostrar_calendar(), seleccion_peluqueria();">
             <p>Peluquería</p>
-          
           </div>
 
           <div id="selector_estetica" class="estetica selector" onclick="mostrar_calendar(), seleccion_estetica();">
@@ -42,6 +46,11 @@
 
 
         <div class="calendar" id="calendar">
+          
+          <div class="volver" id="volver_1">
+            <a href="#"><i class="fa-solid fa-circle-left"></i></a>
+          </div>
+
           <div class="month">
             <i class="fas fa-angle-left prev"></i>
             <div class="date">
@@ -65,7 +74,10 @@
         </div>
     
         <div class="calendar_hours" id="calendar_hours">
-        
+          
+          <div class="volver" id="volver_2">     
+            <a href="#"><i class="fa-solid fa-circle-left"></i></a>
+          </div> 
           <div class="seleccionar_cita" >
             <h2>Seleccione hora para su cita</h2>
           </div>
@@ -93,19 +105,6 @@
     
     <script src="resources/js/jq_calendario.js">
     
-
-      /*
-      function mostrar_calendar(){
-        document.getElementById("calendar").style.display = "block";
-      }
-      
-
-      function mostrar_calendar_hours(){
-        document.getElementById("calendar_hours").style.display = "block";
-      }
-      */
-
-
     </script>
   </body>
 </html>
