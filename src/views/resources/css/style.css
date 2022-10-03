@@ -443,3 +443,515 @@ footer {
 } 
 
 /* fin redes */
+
+/* inicio login */
+.contenedor_form{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../../../../assets/images/fondo_papel.jpg); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:-2; 
+       
+}
+
+.form{
+    width: 280px;
+    height: 573px;
+    display:flex;
+    justify-content: end;
+    flex-direction: column;
+    border: 1px solid black;    
+    border-radius: 3px 0px 0px 3px;
+   /* border: 1px solid rgba(0, 0, 0, 0.20); */
+    background-color: white;
+    border: none;
+    
+}
+
+.sombreado1,.sombreado2{
+    width: 280px;
+    height: 573px;
+    background: linear-gradient(90deg, rgba(207,19,165,1) 26%, rgba(121,9,96,1) 49%, rgba(207,19,165,1) 75%);  
+    position: absolute;
+    z-index:-1;
+    filter: blur(30px);
+
+
+}
+
+.boton_login {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6px;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.505), hsla(317, 45%, 52%, 0.708));
+    color: white;
+    border: 1px solid #642a73;
+    font-weight: 400;
+    margin: 5px 5px;
+    width: 270px;
+    text-align: center;
+    font-size: 15px;    
+    padding: 2px 20px;
+    border-radius: 7px;    
+    display: block;
+}
+
+.boton_login:hover {
+    background: #edebeb9c;
+    color: #642a73;
+    border: 1px solid #642a73;
+    cursor: pointer;
+}
+
+.label{
+    display: block;
+    margin: 20px 10px 3px 10px
+}
+
+.input_login{
+    width: 270px;
+    padding: 10px 5px 3px 5px;
+    margin: 0px 5px 3px 5px;
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    outline: 0px;
+    
+    
+}
+
+.input_login:hover{
+    cursor: pointer;
+}
+
+p, .p_login{
+    margin: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+.cabecera_login{
+    width: 100%;
+    height: 325px;
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.412), hsla(317, 45%, 52%, 0.621)), url(../../../../assets/images/foto\ portada\ peluqueria\ estetica.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+   
+     
+       
+}
+
+.textos-cabecera {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-cabecera h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.textos-cabecera h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.iniciar_sesion {
+    color: #bc4e9c;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin:-30px 0px 0px 60px;
+    position:absolute;
+    z-index: 100;
+   
+}
+
+.lateral{
+    width: 280px;
+    height: 573px;
+     display:flex;
+     justify-content: start;   
+     flex-direction: column;
+     border: 1px solid black;     
+     border-radius: 0px 3px 3px 0px;
+   /*  border: 1px solid rgba(0, 0, 0, 0.20); */
+    border: none;
+    background: white;
+    
+}
+
+.salir {    
+    text-align: right;
+    margin:-11px -7px 0px 0px;
+    
+  
+}
+.salir a{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;    
+    color: black;
+    cursor: pointer;
+  
+}
+
+.megafono{
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/mujer_con_megafono.jpg); 
+    background-size: cover;
+    margin:80px 0px 0px 65px;
+    border-radius: 50%;    
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.texto_lateral{
+    margin-top: 30px;
+    background: white;
+}
+
+.imagen_lateral{
+    width: 90%;
+    margin: 30px 15px 0px 15px;    
+}
+/* fin login */
+
+/* Inicio registro */
+.contenedor_registro{ 
+    width: 100%;
+    min-height: 100vh;
+    background: url(../../../../assets/images/fondo_papel.jpg); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:-2;    
+}
+
+.registro{  
+    width: 280px;
+    height: 573px;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid black;    
+    border-radius: 3px 0px 0px 3px;
+    background-color: white;
+    border: none;
+}
+
+.contenedor_imagen_registro{
+    margin: -10px 0px -10px 0px;    
+}
+
+.sombreado1,.sombreado2{
+    width: 280px;
+    height: 573px;
+    background: linear-gradient(90deg, rgba(207,19,165,1) 26%, rgba(121,9,96,1) 49%, rgba(207,19,165,1) 75%);  
+    position: absolute;
+    z-index:-1;
+    filter: blur(30px);
+}
+
+.boton_registro { 
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6px;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.505), hsla(317, 45%, 52%, 0.708));
+    color: white;
+    border: 1px solid #642a73;
+    font-weight: 400;
+    margin: 5px 5px;
+    width: 270px;
+    text-align: center;
+    font-size: 15px;    
+    padding: 2px 20px;
+    border-radius: 7px;    
+    display: block;
+}
+
+.boton_registro:hover {
+    background: #edebeb9c;
+    color: #642a73;
+    border: 1px solid #642a73;
+    cursor: pointer;
+}
+
+.label{
+    display: block;
+    margin: 20px 10px 3px 10px
+}
+
+.input_registro{
+    width: 270px;
+    padding: 10px 5px 3px 5px;
+    margin: 0px 5px 3px 5px;
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    outline: 0px;        
+}
+
+.input_registro:hover{  
+    cursor: pointer;
+}
+
+p, .p_registro{
+    margin: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+.cabecera_registro{
+    width: 100%;
+    text-align: center; 
+}
+
+.textos-registro {
+   margin-top: -25px;
+}
+
+.textos-cabecera-registro h1 { 
+    font-family: 'Lato', sans-serif; 
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;   
+}
+
+.textos-cabecera-registro h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    position:absolute;
+    z-index: 1;
+    margin:0px 5px 0px 35px;
+    align-items: center;        
+}
+
+.lateral_registro{
+    width: 280px;
+    height: 573px;
+    display:flex;
+    justify-content: start;   
+    flex-direction: column;
+    border: 1px solid black;     
+    border-radius: 0px 3px 3px 0px;
+    border: none;
+    background: white;
+    align-items: center;    
+}
+
+.salir_registro {    
+    text-align: left;
+    margin:-11px -275px 0px 0px;  
+}
+
+.salir_registro a{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;    
+    color: black;
+    cursor: pointer;  
+}
+
+.texto_corporativo1{  
+    margin-top: 60px;
+    display: block;
+}
+
+.texto_corporativo2{  
+    margin-top: 90px;
+    display: none;
+}
+
+.texto_corporativo1 h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.texto_corporativo1 h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color:black;
+    text-align: center;
+}
+
+.texto_corporativo2 h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    line-height:25px;
+}
+
+.gracias {  
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/gracias.jpg);    
+    background-size: cover;
+    margin:25px 65px 0px 65px;   
+    border-radius: 50%;
+    display: block;         
+}
+
+.bienvenido {  
+    width: 150px;
+    height: 150px;    
+    background-image: url(../../../../assets/images/bienvenido_floral.jpg);    
+    background-size: cover;
+    margin:15px 65px 0px 65px;   
+    border-radius: 50%;
+    display: none;     
+}
+
+h3{  
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.texto_lateral_registro1{ 
+    margin-top: 15px; 
+    background: white;
+    display: block; 
+}
+
+.texto_lateral_registro2{ 
+    margin-top: 15px; 
+    background: white;
+    display: none;
+}
+
+.imagen_lateral_registro{
+    width: 90%;
+    margin: 30px 15px 0px 15px;     
+}
+
+/* Fin registro */
+
+
+/* Inicio comprobaciones */
+/*login*/
+#mensaje_error_user_login{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_user_login_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_login{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_login_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+
+/* registro */
+#mensaje_error_user{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_email{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_email_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+
+}
+
+#mensaje_error_pass{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_2{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+#mensaje_error_pass_3{
+    font-size: 12px;
+    color:rgb(216, 81, 81);
+    position:absolute;
+    margin-left: 10px;
+    display: none;
+}
+
+
+
+
+
