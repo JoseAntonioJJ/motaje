@@ -58,6 +58,28 @@ a:hover {
     cursor: pointer;
 }
 
+#nav_tratamientos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+    align-items: center;
+    
+}
+
+#tratamientos {
+    display: flex;
+   align-items: center;
+    flex-direction: column;    
+    margin-top: 150px;   
+    position: absolute;
+      
+    
+    
+   
+}
+
+
 /*Efecto underline hover nav*/
 #underlineEffects  a {
     color: #fff;
