@@ -18,23 +18,31 @@
     <link rel="stylesheet" href="resources/css/bootstrapcss.css"> 
    
     <link href="resources/css/style.css" rel="StyleSheet"> 
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 
 <body>
     <!--Comienzo header-->
     <header>
 
-        <nav>
+        <nav id="nav">
             <div class="row">
                 
                 <a href="login.html"><button  class="btn-citas">Citas</button></a>
                 <div class="boton-citas"></div>
                 
-                    <div class="col-12 col-xl-12 col-md-12 col-sm-12" id="underlineEffects">
-                        <a rfe="#">Acerca de</a>
-                        <a rfe="#">Servicios</a>
-                        <a rfe="#">Contacto</a>
+                    <div class="col-12 col-xl-12 col-md-12 col-sm-12" id="underlineEffects"> 
+                        <div id="nav_tratamientos">                     
+                        <a href="" id="tratamientos:hover">Tratamientos</a>
+                            <div id="tratamientos" style="visibility: hidden;">
+                                <a href="#peluqueria">Peluquería</a>
+                                <a href="#estetica">Estética</a>
+                                <a href="#manicura">Manicura</a>
+                                <a href="#masajes">Masajes</a>
+                            </div>
+                        </div>                                  
+                        <a href="#servicios">Servicios</a>
+                        <a href="#footer">Contacto</a>
                     </div>
                 
             </div>
@@ -59,7 +67,7 @@
 
         <section class="main">
             <h2 class="titulo">Servicios</h2>
-           <div class="row">
+           <div id="servicios" class="row">
                 
                 <div class="cards">
                     <!--cards -->
@@ -165,14 +173,14 @@
 
     <!--Comienzo footer-->
     <footer>
-        <div class="footer">
+        <div id="footer" class="footer">
             <div class="row">
                
                 <div class="col-12 col-xl-4 col-md-12 col-sm-12">
                     <div class="contacto" id="underlineEffectsFoot">
                         <h3 style="margin-bottom: 10px;">Contacto</h3>
                         <div class="nombre">Mariloli Style</div>
-                        <div class="direccion">Avenida de Andalucía, nº29, Local 1, CP.:29500, Málaga.</div>
+                        <div class="direccion">Avenida de Andalucía, nº31, Local 1, CP.:29500, Málaga.</div>
                         <div class="tlf"><i class="fa-solid fa-phone"></i> 666 66 66 66</div>
                         <a id="email" class="email" href="#"><i class="fa-solid fa-envelope"></i>
                             Mariloli_style@gmail.com </a>
@@ -191,12 +199,12 @@
                 <div class="col-12 col-xl-4 col-md-12 col-sm-12">
                     <div class="redes">
 
-                        <a id="google-maps" href="#"><img class="redes-icon"></a>
-                        <a id="instagram" href="#"><img class="redes-icon"></a>
-                        <a id="facebook" href="#"><img class="redes-icon"></a>
-                        <a id="whatsapp" href="#"><img class="redes-icon"></a>
+                        <a id="google-maps" href="https://goo.gl/maps/Rn9CTvkBQhLMBsxn9" target="_blank"><img class="redes-icon"></a>
+                        <a id="instagram" href="https://www.instagram.com" target="_blank"><img class="redes-icon"></a>
+                        <a id="facebook" href="https://es-es.facebook.com" target="_blank"><img class="redes-icon"></a>
+                        <a id="whatsapp" href="https://api.whatsapp.com/send/?phone=34675613131&text=Hola,%20queremos%20agradecerle%20que%20contacte%20con%20nosotros.%20¿En%20que%20podemos%20ayudarle?." target="_blank"><img class="redes-icon"></a>
                         <div class="footer-return-inicio"> <!-- boton inicio redondo-->
-                            <a id="footer-return-inicio" href="#"><img class="flecha-inicio"></a>
+                            <a id="footer-return-inicio" href="#nav"><img class="flecha-inicio"></a>
                         </div>
 
             </div>
@@ -206,6 +214,24 @@
     </footer>
 
 </body>
+<script>
+     function mostrar_acordeon(){
+        var acordeon = document.getElementById("tratamientos");
+        acordeon.style.visibility = "visible";
+    }
+
+    function ocultar_acordeon(){
+        var acordeon = document.getElementById("tratamientos");
+        acordeon.style.visibility = "hidden";
+    }
+
+    var acordeon = document.getElementById("nav_tratamientos");
+
+    acordeon.onmouseout = ocultar_acordeon;
+    acordeon.onmouseover = mostrar_acordeon;
+
+   
+</script>
 
 
 </html>
