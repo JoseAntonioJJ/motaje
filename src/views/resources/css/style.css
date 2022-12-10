@@ -291,6 +291,29 @@ header .textos-header {
     margin-bottom: 10px;
 }
 
+/* boton volver servicios */
+.volver_servicios {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6px;
+    background: white;
+    color: #642a73;
+    border: 1px solid #642a73;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 25px auto 50px auto;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 50px 8px 50px;
+    border-radius: 7px;
+    display: block;
+   }
+
+.volver_servicios:hover {
+    background:linear-gradient(to right, hsla(340, 95%, 50%, 0.505), hsla(317, 45%, 52%, 0.708));;
+    color: white;
+    border: 1px solid #642a73;
+}
+
 /* footer */
 
 footer {

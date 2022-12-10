@@ -65,18 +65,18 @@
     <!--Comienzo Parte central-->
     <main>
 
-        <section class="main">
+        <section class="main" id="main">
             <h2 class="titulo">Servicios</h2>
-           <div id="servicios" class="row">
+           <div id="servicios" class="row" style="display: block">
                 
                 <div class="cards">
                     <!--cards -->
                     <div class="card col-12 col-xl-4 col-md-6 col-sm-12">
                         <div class="card-imagen-principal">
-                            <div class="card-imagen">
+                            <div class="card-imagen" id="img_peluqueria_card">
                                 <img src="../../assets/images/card peluqueria.jpg" class="card-img-top"
                                     alt="modelo luciendo cabello en tonos rojizos">
-                                <a href="#">
+                              <!-- <a href="#"> --> 
                                     <div class="hover-card">
                                         <img src="../../assets/icons/001-ojo.png" alt="icono ojo ver mas">
                                         <p>Servicios y tratamientos</p>
@@ -96,10 +96,10 @@
 
                     <div class="card  col-12 col-xl-4 col-md-6 col-sm-12">
                         <div class="card-imagen-principal">
-                            <div class="card-imagen">
+                            <div class="card-imagen" id="img_estetica_card">
                                 <img src="../../assets/images/card esteticien tratamiento facial.jpg" class="card-img-top"
                                     alt="esteticien aplicando tratamiento sobre el rostro de una clienta">
-                                <a href="#">
+                                <a href="#"> 
                                     <div class="hover-card">
                                         <img src="../../assets/icons/001-ojo.png" alt="icono ojo ver mas">
                                         <p>Servicios y tratamientos</p>
@@ -118,7 +118,7 @@
 
                     <div class="card  col-12 col-xl-4 col-md-6 col-sm-12">
                         <div class="card-imagen-principal">
-                            <div class="card-imagen">
+                            <div class="card-imagen" id="img_manicura_card">
                                 <img src="../../assets/images/card uñas esculpidas gel porcelana.jpg" class="card-img-top"
                                     alt="esteticien trabajando uñas a una clienta">
                                 <a href="#">    
@@ -141,7 +141,7 @@
 
                     <div class="card  col-12 col-xl-4 col-md-6 col-sm-12">
                         <div class="card-imagen-principal">
-                            <div class="card-imagen">
+                            <div class="card-imagen" id="img_masaje_card">
                                 <img src="../../assets/images/card masajes.jpg" class="card-img-top"
                                     alt="masajista haciendo masaje de espalda">
                                 <a href="#">
@@ -167,9 +167,10 @@
                 <!-- fin cards -->
             </div>
         </section>
-        <section class="main_2">
-            <div>
+        <section class="main_2" id="main_2" style="display: none">
+            <div class="container">    
                 <h2>COLOR</h2>
+                
                     <p>Color Completo ....................................desde 28 €</p> 
 
                     <p>Mechas ............................................desde 35 €</p>
@@ -257,14 +258,46 @@
                     <p>Corte Niñ@............................................... 11 €</p>
                     
                     <p>Peinado Niñ@..............................................11 €</p>
-                    
-                     
-
-                             
-                    
-                     
+                    <br>                                          
+                
             </div>
+            <button class="volver_servicios" id="volver_servicios_2"> VOLVER A SERVICIOS </button>                
         </section>
+
+        <section class="main_3" id="main_3" style="display: none">
+            <div class="container">
+                <h2>COLOR</h2>
+                    <p>SERVICIOS DE ESTETICA A CONCRETAR ..................desde 28 €</p> 
+
+                    <p>SERVICIOS DE ESTETICA A CONCRETAR ..................desde 35 €</p>
+                    <br>   
+            </div>
+            <button class="volver_servicios" id="volver_servicios_3"> VOLVER A SERVICIOS </button>               
+        </section>
+        
+        <section class="main_4" id="main_4" style="display: none">
+            <div class="container">
+                <h2>COLOR</h2>
+                    <p>SERVICIOS DE MANICURA A CONCRETAR ..................desde 28 €</p> 
+
+                    <p>SERVICIOS DE MANICURA A CONCRETAR ..................desde 35 €</p>
+                    <br>   
+            </div>
+            <button class="volver_servicios" id="volver_servicios_4"> VOLVER A SERVICIOS </button>                 
+        </section> 
+        
+        <section class="main_5" id="main_5" style="display: none">
+            <div class="container">
+                <h2>COLOR</h2>
+                    <p>SERVICIOS DE MASAJES A CONCRETAR ..................desde 28 €</p> 
+
+                    <p>SERVICIOS DE MASAJES A CONCRETAR ..................desde 35 €</p>
+                    <br>   
+            </div>       
+            <button class="volver_servicios" id="volver_servicios_5"> VOLVER A SERVICIOS </button>                        
+        </section> 
+
+        
     </main>
     <!--Final de Parte central-->
 
@@ -278,8 +311,8 @@
                         <h3 style="margin-bottom: 10px;">Contacto</h3>
                         <div class="nombre">Mariloli Style</div>
                         <div class="direccion">Avenida de Andalucía, nº31, Local 1, CP.:29500, Málaga.</div>
-                        <div class="tlf"><i class="fa-solid fa-phone"></i> 666 66 66 66</div>
-                        <a id="email" class="email" href="#"><i class="fa-solid fa-envelope"></i>
+                        <div class="tlf"><a href="tel:666 66 66 66"><i class="fa-solid fa-phone"></i> 666 66 66 66</a></div>
+                        <a id="email" class="email" href="mailto:Mariloli_style@gmail.com"><i class="fa-solid fa-envelope"></i>
                             Mariloli_style@gmail.com </a>
                     </div>
                     
@@ -312,7 +345,9 @@
 
 </body>
 <script>
-     function mostrar_acordeon(){
+
+    /* mostrar y ocultar acordeon nav*/ 
+    function mostrar_acordeon(){
         var acordeon = document.getElementById("tratamientos");
         acordeon.style.visibility = "visible";
     }
@@ -327,7 +362,85 @@
     acordeon.onmouseout = ocultar_acordeon;
     acordeon.onmouseover = mostrar_acordeon;
 
+
+    /* mostrar y ocultar cards y tratamientos pagina principal*/
+    function mostrar_tratamientos_peluqueria(){
+        var peluqueria = document.getElementById("main_2");
+        peluqueria.style.display = "block";
+        
+        var all_servicios = document.getElementById("servicios");
+        all_servicios.style.display = "none";
+    }
+    
+    var peluqueria_precios = document.getElementById("img_peluqueria_card");
+    peluqueria_precios.onclick = mostrar_tratamientos_peluqueria;
+
+
+
+    function mostrar_tratamientos_estetica(){
+        var peluqueria = document.getElementById("main_3");
+        peluqueria.style.display = "block";
+        
+        var all_servicios = document.getElementById("servicios");
+        all_servicios.style.display = "none";
+    }
+    
+    var estetica_precios = document.getElementById("img_estetica_card");
+    estetica_precios.onclick = mostrar_tratamientos_estetica;
+
+
+
+    function mostrar_tratamientos_manicura(){
+        var peluqueria = document.getElementById("main_3");
+        peluqueria.style.display = "block";
+        
+        var all_servicios = document.getElementById("servicios");
+        all_servicios.style.display = "none";
+    }
+    
+    var manicura_precios = document.getElementById("img_manicura_card");
+    manicura_precios.onclick = mostrar_tratamientos_manicura;
+
+
+
+    function mostrar_tratamientos_masaje(){
+        var peluqueria = document.getElementById("main_3");
+        peluqueria.style.display = "block";
+        
+        var all_servicios = document.getElementById("servicios");
+        all_servicios.style.display = "none";
+    }
+    
+    var masaje_precios = document.getElementById("img_masaje_card");
+    masaje_precios.onclick = mostrar_tratamientos_masaje;
+
+
+
+    function volver_a_servicios(){
+        var all_servicios = document.getElementById("servicios");
+        all_servicios.style.display = "block";
+
+        var peluqueria = document.getElementById("main_2");
+        peluqueria.style.display = "none";
+
+       var estetica = document.getElementById("main_3");
+        estetica.style.display = "none";
+
+        var manicura = document.getElementById("main_4");
+        manicura.style.display = "none";
+        
+        var masajes = document.getElementById("main_5");
+        masajes.style.display = "none";
+    }
+
+    document.getElementById("volver_servicios_2").onclick = volver_a_servicios;
+    document.getElementById("volver_servicios_3").onclick = volver_a_servicios;
+    document.getElementById("volver_servicios_4").onclick = volver_a_servicios;
+    document.getElementById("volver_servicios_5").onclick = volver_a_servicios;
+    
    
+       
+       
 </script>
 
 
